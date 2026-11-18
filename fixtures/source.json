@@ -1,0 +1,57 @@
+{
+  "scope": "P1",
+  "resources": {
+    "/presentation/P1": {
+      "body": {
+        "presentation": "P1",
+        "documents": [
+          {
+            "id": "DOC1",
+            "href": "/presentation/P1/records/DOC1"
+          }
+        ]
+      }
+    },
+    "/presentation/P1/records/DOC1": {
+      "body": {
+        "document": "DOC1",
+        "presentation": "P1",
+        "bank": "BANK-A",
+        "kind": "invoice",
+        "revision": "1",
+        "received": true,
+        "body": "合成商业单据"
+      }
+    },
+    "/presentation/P1/relations/DOC1": {
+      "body": {
+        "discrepancies": [
+          {
+            "id": "X1",
+            "bank": "BANK-A",
+            "scope": "whole-document"
+          }
+        ],
+        "correction": {
+          "received": true,
+          "reviewed": false
+        }
+      }
+    }
+  },
+  "portal": {
+    "identity": "document",
+    "records": {
+      "DOC1": {
+        "document": "DOC1",
+        "presentation": "P1",
+        "bank": "BANK-A",
+        "kind": "invoice",
+        "revision": "1",
+        "received": true,
+        "body": "合成商业单据"
+      }
+    },
+    "version": 1
+  }
+}

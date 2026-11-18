@@ -1,0 +1,16 @@
+{
+  "name": "document-discrepancy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "信用证交单门户中不符点与补正原件的资料接收",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --test-concurrency=1",
+    "demo": "node scripts/demo.mjs",
+    "start": "node scripts/start.mjs"
+  }
+}
